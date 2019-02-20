@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<script language="JavaScript" type="text/javascript"> 
+
+<!-- 
+
+function addMyClipboard()
+
+{
+
+var r=document.Form1.txtClipboard.createTextRange();
+
+r.execCommand("Copy"); 
+
+}
+
+//--> 
+function addMyClipboard( obj)
+
+{
+
+    var r=obj.createTextRange();
+
+    r.execCommand("Copy");
+
+}
+
+
+
+
+document.Form1.TextBox1.focus();
+
+document.execCommand("Paste");
+
+
+
+
+
+function cutMyClipboard(obj)
+
+{
+
+var r=obj.createTextRange();
+
+r.execCommand("Cut");
+
+
+
+}
+</script>
+<INPUT TYPE="text" id="txtClipboard">
+
+
+
+
+
+</html>

@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Untitled Document</title>
+</head>
+<body>
+<button id="prev" type="button">上一步</button>
+<button id="next" type="button">下一步</button>
+<br><br>
+<textarea id="text" cols="5" style="width:300px"></textarea>
+<script language="JavaScript" type="text/JavaScript">
+var step = 0; // 步驟變數
+
+var textList = new Array(); // array容器
+var prev = document.getElementById('prev');
+var next = document.getElementById('next');
+var text = document.getElementById('text');
+function textWrite(){
+    step++; 
+    textList.push(text.value);
+}
+text.addEventListener('input', textWrite);
+prev.onclick = function(){
+    if(step < 2){
+        alert('沒有上一步');
+    }else{
+        step--;
+        text.value = textList[step - 1];
+    }
+}
+next.onclick = function(){
+    if(step > textList.length - 1){
+        alert('沒有下一步');
+    }else{
+        step++;
+        text.value = textList[step - 1];
+    }
+}
+</script>
+</body>
+</html>

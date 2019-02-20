@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Webserver demo</title>
+	
+	<!-- Import the Javascript SDK -->
+	<script src='assets/iX.js' type='text/javascript'></script>
+	
+	<!-- Setup this page by calling setup, this is mandatory -->
+	<script type="text/javascript">
+	
+		// refreshInterval is the update frequency in milliseconds
+		iX.setup();
+		//iX.setup({refreshInterval: 1000});
+	</script>
+</head>
+<body>
+	<div style="float:left;">
+		<h2>Reading tag values</h2>
+
+		<!-- 
+			This will read the SystemTagDateTime tag from the project.
+			
+			data-ix-format defines the format of the date. 
+			H is replaced with the hour 24hour format, i with the minutes 
+			and s with the seconds. See the manual for more options.
+			
+			data-ix-refresh attribute defines the refresh mode of this
+			tag - i.e. how to updated the tag. 'interval' tells us that
+			the value should be updated regularly. Other options are 
+			'none' (do not fetch the value) and 'onetime' (fetch the value only once).
+		-->
+		SystemTagDateTime: 
+		<span 
+			data-ix-tag="SystemTagDateTime" 
+			data-ix-format="H:i:s"
+			data-ix-refresh="interval" ></span> <br />
+		
+		<!-- 
+			You are not constrained to be using <span> as a placeholder for tag values,
+			you may use <p>, <strong>, <pre> and many more. The content of the element 
+			will be replaced with the tag value when the tag is updated.
+		-->
+		Tag 2: <code data-ix-tag="Tag2" data-ix-format="00.000" data-ix-refresh="interval"></code><br />    
+		
+		Tag 3: <span data-ix-tag="Tag3" data-ix-refresh="interval"></span><br />
+		
+		<!-- 
+			In this example the data-ix-refresh has been set to 'none'. This means that
+			the tag have to be manually updated using a button or similar. Notice that the 
+			we have defined an id on the tag element in order to be able to refrence
+			it from the refresh button.
+		-->
+		Tag 3 (manual): 
+		<span data-ix-tag="Tag3" id="manualTag3" data-ix-refresh="none">??</span>&nbsp;&nbsp;
+		<button data-ix-refreshButton="manualTag3">Refresh</button><br />
+	</div>
+	<div style="float:left; margin-left: 50px;">
+	
+		<h2>Writing tag values</h2>
+
+		<!-- 
+			This example show how a to write to a tag value. The data-ix-setter attribute
+			must be applied to input elements. A button is defined to be able to submit
+			a changed value.
+			
+			There is validation to ensure that the input value can be converted to the type
+			of the tag. See the documentation on how to visualize a invalid value. Invalid values
+			are not submitted.
+		-->
+		Tag3: <input type="number" data-ix-setter="Tag3" />&nbsp;&nbsp;
+		<button data-ix-submitbutton="Tag3">Set Tag3</button><br />
+
+		Tag4: <input type="number" data-ix-setter="Tag4" /><br />
+		<!-- 
+			It's possible to submit multiple tag values at once. Separate tag names with
+			',' or use the special character '*' to submit all tags in this page.
+		-->
+		<button data-ix-submitbutton="Tag3,Tag4">Set Tag3 & Tag4</button>
+	</div>
+	
+	<div style="clear:both;"></div>
+	
+	<p><a href="index.html">Example 1</a></p>
+	<p><a href="gauge.html">Example 2</a></p>	
+	<p><a href="advanced4.html">Example 3</a></p>	
+
+
+	
+	<h1>About this demo</h1>
+    
+	<p>
+		This sample demonstrates the how to read and write tags using the
+		metadata attributes defined by the Javascript SDK (Software Development Kit).
+		<br />
+		Right click and choose "View Source" to see how this page was made or click
+		the "Step by step" guide at the top of this window.
+	</p>
+
+</body>
+</html>
