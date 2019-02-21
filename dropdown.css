@@ -1,0 +1,192 @@
+/*dropdown_title.css*/
+#title{
+width:250px;
+font-size:14px;
+margin:auto 50px;	
+z-index:1;
+background-color:black;
+}
+#title_frame {
+width: 100%;
+padding: 10px;
+margin:-70px auto;
+margin-left:-8px;
+background-color: black;
+text-align: center;
+}
+#dropbtn {
+  background-color:transparent;
+  padding: 10px;
+  border:none;
+  font-size:18px;
+  border-radius:10px;
+  outline:none;
+  margin-left:10px;
+}
+#dropdown {
+  position: relative;
+  top:5px;
+  left:20px;
+  display: inline-block;
+}
+#dropdown-content { 
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 250px;
+  border-radius:10px;
+  z-index:2;
+}
+#dropdown-content a {
+  color: black;
+  padding: 6px 10px;
+  text-decoration: none;
+  text-align:left;
+  display: block;
+  border-radius:10px;
+}
+#dropdown-content a:hover {background-color: #ddd;}
+
+#dropdown:hover 
+#dropdown-content {display: block; }
+
+#dropdown:hover 
+#dropbtn {background-color: #cc0000;}
+
+#button {
+  background-color: #cc0000; 
+  color: white;
+  padding: 12px 16px;
+  display: inline-block;
+  font-size: 16px;
+  margin:4 px 10px;
+  border: none;
+  border-radius:10px;
+  outline:none; 
+  position:relative;
+  left:200px;
+}
+#button:active {
+    position:relative;
+    top:1px;
+}
+#table{
+	position:relative;
+	top:15px;	
+}
+#table1{
+	position:relative;
+	top:-20px;	
+}
+#issueEscalation{
+	width:1300px;
+	position:relative;
+	top:60px;
+	left:50px;
+	z-index:1;
+}
+#Writebtn{
+	background-color: #cc0000; 
+	color: white;
+	border-radius:10px;
+	outline:none; 
+	position:relative;
+	left:500px;
+	top:-55px;
+}
+#Writebtn1{
+	background-color: #cc0000; 
+	color: white;
+	border-radius:10px;
+	outline:none; 
+	position:relative;
+	left:300px;
+	top:-55px;
+}
+#all{
+	background-color: #cc0000; 
+	color: white;
+	border-radius:10px;
+	outline:none; 
+	position:relative;
+	left:500px;
+	top:-55px;
+}
+#all1{
+	background-color: #cc0000; 
+	color: white;
+	border-radius:10px;
+	outline:none; 
+	position:relative;
+	left:300px;
+	top:-55px;
+}
+.editWritebtn {
+   background-color: #cc0000; 
+	color: white;
+	border-radius:10px;
+	outline:none; 
+	position:relative;
+	left:500px;
+	top:-55px;
+}
+.editWritebtn1 {
+   background-color: #cc0000; 
+	color: white;
+	border-radius:10px;
+	outline:none; 
+	position:relative;
+	left:300px;
+	top:-55px;
+}
+.editWritebtn:hover, .editWritebtn:focus {
+    background-color: #cc0000;
+}
+
+.editdropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.editdropdown-content {
+    display: none;
+    position: absolute;
+	left:500px;
+	top:-20px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.editdropdown-content1 {
+    display: none;
+    position: absolute;
+	left:300px;
+	top:-20px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.editdropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.editdropdown-content1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.editdropdown  a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+#close_project{
+	position:relative;
+	top:10px;
+}

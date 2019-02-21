@@ -1,0 +1,123 @@
+h1 {
+  font-size:     72px;
+  line-height:   1.5;
+  color: #2c3e50;
+  font-weight:   100;
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+	text-align:center;
+	margin-top:-20px;
+}
+
+#container {
+  width:  980px;
+  margin: auto auto;
+}
+
+section {
+  height: 300px;
+ }
+.section--blue {
+  background-color: 	#444444;
+}
+#main {
+  text-align: center;
+  width:450px;
+  margin-left:250px;
+  margin-top:170px;
+}
+#image_logo{
+margin-top:-45px;
+margin-left:600px;
+}
+#image_logo1 {
+margin-top: -500px;
+margin-left:380px;
+}
+
+.label_input {
+font-size: 20px;
+font-family: Calibri Light;
+width: 100px;
+height: 35px;
+line-height: 28px;
+text-align: center;
+color: white;
+background-color: #cc0000;
+border-top-left-radius:5px;
+border-bottom-left-radius: 5px;
+margin-left:280px;
+}
+.text_field {
+width: 278px;
+height: 35px;
+font-size:18px;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+}
+
+form p > * {
+display: inline-block;
+vertical-align: middle;
+}
+
+
+#btn_login {
+font-size: 20px;
+font-family: Calibri Light;
+width: 120px;
+height: 35px;
+line-height: 30px;
+text-align: center;
+color: white;
+background-color: #cc0000;
+border-radius: 10px;
+border: 0;
+margin-left:280px;
+outline:none;
+box-shadow: 0 5px #999;
+}
+#btn_login:active {
+  background-color: #cc0000;
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
+#btn_reset {
+font-size: 20px;
+font-family: Calibri Light;
+width: 120px;
+height: 35px;
+line-height: 30px;
+text-align: center;
+color: white;
+background-color: #cc0000;
+border-radius: 10px;
+border: 0;
+margin-left:20px;
+margin-top:30px;
+outline:none;
+box-shadow: 0 5px #999;
+}
+#btn_reset:active {
+  background-color: #cc0000;
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
+#forget_pwd {
+font-size: 16px;
+color:	#5599FF;
+text-decoration: underline;
+position: relative;
+top: -40px;
+left:50px;
+}

@@ -21,7 +21,29 @@
             );
         }
     );
+  var  j=0;
+    $(function(){
+            $("#all1").click(
+                function (){
 
+                    $("input[name='test']").prop("checked","checked");
+                    //这个地方只能用prop实现多次点击切换全选和全不选的效果，用attr的话不会多次实现。
+                    // 因为attr不会记录当前checkbox的选中状态，所以这个地方只能使用prop
+
+                    if(j==1){
+
+                        $("input[name='test']").prop("checked",false);
+
+                    }
+                    j++;
+                    if(j>1){
+                        j=0;
+                    }
+
+                }
+            );
+        }
+    );
 	
 	 function addTr(tab, row, trHtml){
    //獲取table最後一行 $("#tab tr:last")
